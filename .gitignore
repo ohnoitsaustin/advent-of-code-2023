@@ -68,3 +68,4 @@ tramp
 
 # packages
 node_modules/
+.next/
