@@ -1,4 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+// next.config.js
+module.exports = {
+    webpack: (config, options) => {
+      config.module.rules.push({
+        test: /\.txt$/,
+        use: 'raw-loader',
+      });
+  
+      return config;
+    },
+  };
+  
